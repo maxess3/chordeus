@@ -1,0 +1,38 @@
+nav, ul, li{
+    display: flex;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+nav div{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+li{
+    position: relative;
+}
+
+li:not(li:first-child){
+    margin-left: 55px;
+}
+
+li:not(li:last-child):after{
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 2px;
+    height: 25px;
+    background-color: var(--extraColor);
+    opacity: 0.4;
+}
+
+li svg{
+    margin-right: 10px;
+}
