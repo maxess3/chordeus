@@ -1,27 +1,27 @@
-nav, ul, li{
+.navbar, .navbar ul, .navbar li{
     display: flex;
 }
 
-nav{
+.navbar{
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px;
 }
 
-nav div{
+.navbar div{
     font-weight: bold;
     text-transform: uppercase;
 }
 
-li{
+.navbar li{
     position: relative;
 }
 
-li:not(li:first-child){
+.navbar li:not(li:first-child){
     margin-left: 55px;
 }
 
-li:not(li:last-child):after{
+.navbar li:not(li:last-child):after{
     position: absolute;
     right: -30px;
     top: 50%;
@@ -33,6 +33,6 @@ li:not(li:last-child):after{
     opacity: 0.4;
 }
 
-li svg{
+.navbar li svg{
     margin-right: 10px;
 }

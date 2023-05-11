@@ -6,10 +6,10 @@ import { faArrowTrendUp, faHeadphones, faHeart, faPaperPlane, faUser } from '@fo
 
 function Navbar(){
     return (
-        <nav>
+        <nav className={styles.navbar}>
             <div><Link to={'/'}>Chordeus</Link></div>
             <ul>
-                <li><Link to={'/'}><FontAwesomeIcon icon={faHeadphones} style={{fontSize: '17px'}}></FontAwesomeIcon>Review</Link></li>
+                <li><Link to={'/review'}><FontAwesomeIcon icon={faHeadphones} style={{fontSize: '17px'}}></FontAwesomeIcon>Review</Link></li>
                 <li><Link to={'/'}><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>Recommendations</Link></li>
                 <li><Link to={'/'}><FontAwesomeIcon icon={faArrowTrendUp}></FontAwesomeIcon>Popular sounds</Link></li>
                 <li><Link to={'/'}><FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon>Send your sound</Link></li>
