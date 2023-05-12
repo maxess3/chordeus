@@ -5,14 +5,11 @@ import { faBook, faMusic, faSearch, faUser } from '@fortawesome/free-solid-svg-i
 
 function Search(){
     const [searchClicked, setSearchClicked] = useState(false);
-    useEffect(() => {
-        console.log(searchClicked)
-    }, [searchClicked])
     return (
         <form action="" className={styles.container} onClick={() => setSearchClicked(prevState => !prevState)}>
             <div className={styles.innerContainer}>
                 <div>
-                    <FontAwesomeIcon size={'m'} className={styles.searchIcon} icon={faSearch}></FontAwesomeIcon>
+                    <FontAwesomeIcon className={styles.searchIcon} icon={faSearch}></FontAwesomeIcon>
                     <input className={`${searchClicked ? styles.searchbar : styles.searchbarOff}`} placeholder='Search a genre, an artist, a musician ...' type="text" />
                     <span className={styles.clear}>Clear</span>
                 </div>

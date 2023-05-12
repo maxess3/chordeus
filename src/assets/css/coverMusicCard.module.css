@@ -1,0 +1,63 @@
+.containerSong:not(.containerSong:first-child){
+    margin-left: 20px;
+}
+
+.cover{
+    width: 250px;
+    height: 250px;
+    background: url('/src/assets/img/musician.jpg');
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 10px solid var(--secondaryColor);
+    position: relative;
+    -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.05); 
+    box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    rotate: 0deg;
+    transition: rotate 0.4s ease;
+}
+
+.cover::after{
+    position: absolute;
+    content: url('/src/assets/img/play.svg');
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+}
+
+.cover:hover{
+    rotate: -2deg;
+    transition: rotate 0.4s ease;
+}
+
+.cover:hover::after{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    position: absolute;
+    content: url('/src/assets/img/play.svg');
+    width: 40px;
+}
+
+.cover span{
+    position: absolute;
+    left: 20px;
+    padding: 2px 20px;
+    background-color: var(--tertiaryColor);
+    border-radius: 20px;
+    bottom: 20px;
+}
+
+.infoSong{
+    margin-top: 10px;
+}
+
+.titleSong{
+    font-size: 1.1em;
+    font-weight: 500;
+}
