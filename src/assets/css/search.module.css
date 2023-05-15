@@ -5,13 +5,9 @@
     justify-content: center;
 }
 
-.container div div{
-    position: relative;
-}
-
 .innerContainer{
+    position: relative;
     border-radius: 23px;
-    border: 9px solid rgba(57,62,70,0.3);
 }
 
 .clear{
@@ -77,6 +73,12 @@
     display: none;
 }
 
+.results{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
 .results ul{
     width: 100%;
     list-style: none;
@@ -113,12 +115,6 @@
 
 .resultsFilter span{
     cursor: pointer;
-}
-
-.resultsFilter span:first-child{
-    border-bottom: 2px solid var(--extraColor);
-    padding-bottom: 18px;
-    border-radius: 1px;
 }
 
 .resultsFilter span:not(span:first-child){

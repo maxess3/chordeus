@@ -1,16 +1,8 @@
-.containerSong:not(.containerSong:first-child){
-    margin-left: 20px;
-}
-
 .cover{
-    width: 250px;
-    height: 250px;
-    background: url('/src/assets/img/musician.jpg');
-    background-position: center;   
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-color: var(--secondaryColor);
     border-radius: 10px;
-    border: 10px solid var(--secondaryColor);
     position: relative;
     -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.05); 
     box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.05);
@@ -60,4 +52,26 @@
 .titleSong{
     font-size: 1.1em;
     font-weight: 500;
+}
+
+.containerCards{
+    padding-left: 50px;
+    position: relative;
+}
+
+.containerCards::after{
+    pointer-events: none;
+    background: rgb(34,40,49);
+background: linear-gradient(281deg, rgba(34,40,49,1) 0%, rgba(34,40,49,0.4962359943977591) 11%, rgba(34,40,49,0) 15%);
+    position: absolute;
+    content: '';
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.swiperSlide{
+    width: 200px !important;
+    padding-right: 20px;
 }

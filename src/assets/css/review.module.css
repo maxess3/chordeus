@@ -1,22 +1,15 @@
 .container{
-    padding: 0 50px;
 }
 
 .releaseContainer h2{
     font-size: 2em;
     font-weight: 500;
+    padding: 0 50px;
 }
 
 .releaseContainer p{
     max-width: 800px;
-    margin-top: -25px;
+    margin-top: -20px;
     line-height: 1.7em;
-}
-
-.containerSongs{
-    display: flex;
-    overflow-x: auto;
-    padding: 20px 0;
-    position: relative;
-    z-index: 0 !important;
+    padding: 0 50px;
 }
